@@ -1,0 +1,22 @@
+{
+  "name": "ai-taxonomist-landing",
+  "version": "1.0.0",
+  "description": "AI Taxonomist landing and demo page",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve -s"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plantnet/ai-taxonomist-landing.git"
+  },
+  "author": "Hugo Gresse",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/plantnet/ai-taxonomist-landing/issues"
+  },
+  "homepage": "https://github.com/plantnet/ai-taxonomist-landing#readme",
+  "devDependencies": {
+    "serve": "^14.0.1"
+  }
+}

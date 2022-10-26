@@ -32,16 +32,15 @@ jobs:
               uses: actions/checkout@v3
             - name: Setup Pages
               uses: actions/configure-pages@v2
+
+            - name: Prepare folder
+              run: |
+                  mkdir /dist/
+                  mv index.html dist/index.html
             - name: Upload artifact
               uses: actions/upload-pages-artifact@v1
               with:
-                  path: |
-                      index.html
-                      images/*.(jpg|png|svg)
-                      !node_modules/**
-                      !.**
-                      !LICENSE
-                      !package**
+                  path: "dist"
             - name: Deploy to GitHub Pages
               id: deployment
               uses: actions/deploy-pages@v1

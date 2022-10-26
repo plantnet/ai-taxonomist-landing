@@ -35,7 +35,7 @@ jobs:
 
             - name: Prepare folder
               run: |
-                  mkdir /dist/
+                  mkdir dist
                   mv index.html dist/index.html
             - name: Upload artifact
               uses: actions/upload-pages-artifact@v1

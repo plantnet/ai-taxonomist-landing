@@ -37,6 +37,9 @@ jobs:
               run: |
                   mkdir dist
                   mv index.html dist/index.html
+                  mv images images
+                  for f in index-*; do mv "$f" "dist/$(echo "$f" | sed 's/^index//g')"; done
+                  ls -la dist
             - name: Upload artifact
               uses: actions/upload-pages-artifact@v1
               with:

@@ -4,7 +4,7 @@
   "description": "AI Taxonomist landing and demo page",
   "main": "index.html",
   "scripts": {
-    "start": "serve -s"
+    "start": "serve"
   },
   "repository": {
     "type": "git",
